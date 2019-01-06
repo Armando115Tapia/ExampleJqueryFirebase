@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example of JQuery and Firebase</title>
+</head>
+<body>
+<div id="root"></div>
+<h1>Example of Jquery with Firebase</h1>
+<h2>Inicia Sesion</h2>
+<button id="login"> Inicia con google</button>
+
+    
+
+
+<!--Jquery minified CDN add in the end for that allow a fliud charge of the page-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+            
+<!--Firebase-->
+<!--This is for import firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+
+<!--This is for references-->
+<script>
+  // Initialize Firebase 
+  var config = {
+    apiKey: "AIzaSyB-5fRNrawnX4iL--1cvgIwv6k_Vx5FMb4",
+    authDomain: "appexamplejquery.firebaseapp.com",
+    databaseURL: "https://appexamplejquery.firebaseio.com",
+    projectId: "appexamplejquery",
+    storageBucket: "appexamplejquery.appspot.com",
+    messagingSenderId: "808450917327"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!---->
+
+
+</body>
+</html>
