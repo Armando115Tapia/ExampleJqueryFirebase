@@ -18,6 +18,22 @@ $('#login').click( function () {
 
 }); 
 
+//Keep user in Database 
+$('#guardar').click(function(){
+    //Create a new brach in the databse NoSQL
+    firebase.database().ref("ramaPruebaJquery")
+    .set({
+        nombre:"Armando Tapia",
+        edad:"15",
+        sexo:"mucho"
+         })
+});
+
+
+
+
+
+
 
 
 
