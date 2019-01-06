@@ -9,7 +9,11 @@ $('#login').click( function () {
         firebase.auth()
         .signInWithPopup(provider)
         .then(function(result) {
-            console.log(result.user);
+            //console.log(result.user);
+            //when the auth is done
+            $('#login').hide();
+            //Agregar html 
+            $('#root').append("<img src='"+ result.user.photoURL+"' /> ");
         }); 
 
 }); 
